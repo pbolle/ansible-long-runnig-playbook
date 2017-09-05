@@ -1,0 +1,12 @@
+---
+- debug:
+    msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+
+- shell: /bin/date
+  register: result
+
+- debug:
+    var: result
+
+- name: long running
+  shell: "sleep 300"
