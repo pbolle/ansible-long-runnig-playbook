@@ -7,14 +7,10 @@
 
 - debug:
     var: result
+  when: ansible_local | hasLocalFactVersion('tomcat_ms','10.0')
 
 - name: simpel module
   hello: name=philipp
-
-#- which:
-#    name: "python2"
-#    dest: "python"
-
 
 - name: long running
   shell: "sleep 300"
