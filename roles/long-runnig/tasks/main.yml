@@ -12,5 +12,8 @@
 - name: simpel module
   hello: name=philipp
 
+- name: wrong variable
+  ping: data={{ wrong_var }}
+
 - name: long running
   shell: "sleep 300"
