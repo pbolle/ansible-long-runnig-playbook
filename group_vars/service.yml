@@ -1,0 +1,12 @@
+firewall_cservices:
+  mongodb:
+    name: mongodb
+    descr: mongodb server
+    ports:
+        - "mongo/tcp"
+  microservice:
+    name: microservices
+    descr: microservice
+    ports:
+        - "43180/tcp"
+        - "43280/tcp"

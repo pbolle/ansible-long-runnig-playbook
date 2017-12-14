@@ -1,0 +1,11 @@
+firewall_cservices:
+  corem:
+    name: corem
+    descr: coremedia content-server
+    ports:
+        - "corem80/tcp"
+  apache:
+    name: apache
+    descr: Apache Server
+    ports:
+        - "80/tcp"

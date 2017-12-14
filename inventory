@@ -2,3 +2,10 @@ localhost     ansible_connection=local
 
 [local]
 localhost
+
+
+[service]
+localhost
+
+[management]
+localhost
