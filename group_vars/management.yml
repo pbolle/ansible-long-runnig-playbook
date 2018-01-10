@@ -9,3 +9,10 @@ firewall_cservices:
     descr: Apache Server
     ports:
         - "80/tcp"
+
+semodule_configs: [
+  {
+    name: test,
+    template_name: test
+  }
+]

@@ -10,3 +10,10 @@ firewall_cservices:
     ports:
         - "43180/tcp"
         - "43280/tcp"
+
+semodule_configs: [
+  {
+    name: test2,
+    template_name: test2
+  }
+]

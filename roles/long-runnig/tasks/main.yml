@@ -5,6 +5,9 @@
 - debug:
     msg: "firewall_cservices {{ firewall_cservices }}"
 
+- debug:
+    msg: "firewall_cservices {{ semodule_configs }}"
+
 - shell: /bin/date
   register: result
 
